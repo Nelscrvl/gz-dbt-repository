@@ -72,3 +72,18 @@ sources:
                 tests:
                   - unique 
                   - not_null
+          
+models:
+              - name: int_campaigns_day
+                description: performance of the marketing campaign per day
+                columns:                             
+                  - name: ads_cost 
+                    description : cost aquisition per day 
+                  - name: ads_impression 
+                    description: nb of impression of the campaign per day
+                  - name : ads_clicks 
+                    description: nb of click of the campaign per day
+                  - name: date_date
+                    tests:
+                      - not_null  
+                           
