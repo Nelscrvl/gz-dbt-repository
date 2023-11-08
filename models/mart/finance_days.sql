@@ -1,3 +1,5 @@
+{{ config(materialized= 'table') }}
+
 WITH grup AS (SELECT 
 
 date_date, 
