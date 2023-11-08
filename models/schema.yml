@@ -88,14 +88,10 @@ models:
                       - not_null  
 
 
-models:        
               - name : finance_camapigns_day
                 description : report of revenu by campaign
                 columns: 
                   - name : ads_margin 
                     description : margin per ampaign per day
-                  - name: date_date
-                    descritpion: primary_key
-                    tests:
-                      - not_null                     
+                                    
                            
