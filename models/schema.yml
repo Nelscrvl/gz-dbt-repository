@@ -10,8 +10,8 @@ sources:
           - name: sales
             identifier: raw_gz_sales
             description: sales of greewneez / we have one row per product_id found in each order_id 
-            columns:
-              - name: orders_id
+            columns: 
+              - name: "(orders_id || '-' || pdt_id)"
                 description: primary key of the table
                 tests:
                   - unique 
