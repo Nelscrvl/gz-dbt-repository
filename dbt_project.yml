@@ -45,7 +45,7 @@ models:
     staging: 
       materialized: view
 
-    sales : 
+    intermediate : 
       materialized: view
 
     raw : 
