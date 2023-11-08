@@ -40,12 +40,35 @@ sources:
 
           - name: adwords
             identifier: raw_gz_adwords
+            columns:
+              - name: "(date_date || '-' || paid_source || '-' || campaign_key )"
+                description: primary key of the table
+                tests:
+                  - unique 
+                  - not_null 
 
           - name: bing
             identifier: raw_gz_bing
-
+            columns:
+              - name: "(date_date || '-' || paid_source || '-' || campaign_key )"
+                description: primary key of the table
+                tests:
+                  - unique 
+                  - not_null
           - name: criteo
             identifier: raw_gz_criteo
+            columns:
+              - name: "(date_date || '-' || paid_source || '-' || campaign_key )"
+                description: primary key of the table
+                tests:
+                  - unique 
+                  - not_null
 
           - name: facebook
             identifier: raw_gz_facebook
+            columns:
+              - name: "(date_date || '-' || paid_source || '-' || campaign_key )"
+                description: primary key of the table
+                tests:
+                  - unique 
+                  - not_null
