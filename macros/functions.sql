@@ -1,5 +1,3 @@
-{% macro margin_calculation(table) %}
-SELECT *,
-  ROUND(SAFE_DIVIDE(margin, revenue),2) AS margin_percent
-FROM {{table}}
+{% macro margin_calculation(purchase_cost, revenue) %}
+  ROUND(SAFE_DIVIDE(purchase_cost, revenue),2) 
 {% endmacro %}
